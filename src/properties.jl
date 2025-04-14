@@ -17,13 +17,13 @@ is_generalized_quadratic(::Type) = false
 is_generalized_quadratic(::T) where T = is_generalized_quadratic(T)
 
 """
-    is_prox_accurate(T::Type)
+    is_proximable(T::Type)
 
 Returns `true` if the type `T` has a proximal operator that can be expressed in a closed formula.
     (i.e. `prox!` function is defined for the type `T`).
 """
-is_prox_accurate(::Type) = true
-is_prox_accurate(::T) where T = is_prox_accurate(T)
+is_proximable(::Type) = true
+is_proximable(::T) where T = is_proximable(T)
 
 """
     is_separable(T::Type)
