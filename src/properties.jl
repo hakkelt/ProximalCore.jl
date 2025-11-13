@@ -95,7 +95,7 @@ is_support(::T) where T = is_support(T)
     is_locally_smooth(T::Type)
 
 Returns `true` if the type `T` represents a locally smooth function.
-A function f(x) is locally smooth if it is continuously differentiable on a subset of its domain.
+A function f(x) is locally smooth if it is smooth on every open set within its domain.
 If f is locally smooth, then `gradient!(y, f, x)` is expected to be defined, and it should return the value of f at x and store the gradient in y.
 """
 is_locally_smooth(T::Type) = is_smooth(T)
