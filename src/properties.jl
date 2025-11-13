@@ -105,7 +105,7 @@ is_locally_smooth(::T) where T = is_locally_smooth(T)
     is_smooth(T::Type)
 
 Returns `true` if the type `T` represents a smooth function.
-A function f(x) is smooth if it is continuously differentiable.
+A function f(x) is smooth if it is continuously differentiable and its gradient is Lipschitz.
 If f is smooth, then `gradient!(y, f, x)` is expected to be defined, and it should return the value of f at x and store the gradient in y.
 """
 is_smooth(::Type) = false
