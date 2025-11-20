@@ -1,6 +1,8 @@
 using Documenter
 using ProximalCore
 
+DocMeta.setdocmeta!(ProximalCore, :DocTestSetup, :(using ProximalCore); recursive=true)
+
 makedocs(
     sitename = "ProximalCore.jl",
     format = Documenter.HTML(),
@@ -11,7 +13,7 @@ makedocs(
     ]
 )
 
-#=deploydocs(
+deploydocs(
     repo = "github.com/JuliaFirstOrder/ProximalCore.jl",
     devbranch = "main"
-)=#
+)
