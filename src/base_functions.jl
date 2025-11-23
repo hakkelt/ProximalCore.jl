@@ -5,8 +5,8 @@ Constructs the zero function, i.e., the function that is zero everywhere.
 
 # Example
 ```jldoctest
-julia> f = Zero()
-Zero()
+julia> f = ProximalCore.Zero()
+ProximalCore.Zero()
 
 julia> f(rand(3))
 0.0
@@ -36,13 +36,13 @@ Constructs the indicator function of the zero set, i.e., the function that is ze
 
 # Example
 ```jldoctest
-julia> f = IndZero()
-IndZero()
+julia> f = ProximalCore.IndZero()
+ProximalCore.IndZero()
 
-julia> f([1, 2, 3])
+julia> f([1.0, 2.0, 3.0])
 Inf
 
-julia> f([0, 0, 0])
+julia> f([0.0, 0.0, 0.0])
 0.0
 ```
 """
