@@ -13,7 +13,4 @@ makedocs(
     ]
 )
 
-deploydocs(
-    repo = "github.com/JuliaFirstOrder/ProximalCore.jl",
-    devbranch = "main"
-)
+deploydocs(repo = "github.com/JuliaFirstOrder/ProximalCore.jl")
